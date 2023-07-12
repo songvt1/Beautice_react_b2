@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer components {
+  .box-shadow-banner {
+    box-shadow: 0 25px 50px 25px #f7f7ff;
+  }
+  .box-shadow-button {
+    box-shadow: 0 17px 22px #ffedf6;
+  }
+  .background-image {
+    background: (180deg, #eef0ff 0%, var(--white-color) 100%);
+  }
+  .input {
+    height: 61px;
+    margin-bottom: 38px;
+    border-radius: 15px;
+    border: 1px solid #d9ddfe;
+    background: var(--white-color);
+
+    color: #c5c5c5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    padding-left: 20px;
+  }
+
+  .textarea {
+    height: 214px;
+    resize: none;
+    padding: 20px 0 0 20px;
+
+    color: #c5c5c5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    padding-left: 20px;
+
+    border-radius: 15px;
+    border: 1px solid #d9ddfe;
+    background: var(--white-color);
+  }
+
+  .footer-page-information {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #d7dbff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    padding: 10px 0px 3px 4px;
+  }
+}
