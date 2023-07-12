@@ -7,8 +7,25 @@ import AboutUs from "./components/AboutUs";
 import Professional from "./components/Professional";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import GoToTop from "./components/GoToTop";
+
+import { useEffect, useState } from "react";
 
 function App() {
+  const [showGoToTop, setShowGoToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowGoToTop(window.scrollY >= 3000);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="bg-contain xl:bg-auto  bg-[url('./assets/img/SlideBackground.png')] bg-no-repeat max-w-[1440px] mx-auto h-full">
       <div className="mx-[20px] sm:mx-[40px] xl:mx-[150px] pt-10">
@@ -32,6 +49,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      {showGoToTop && <GoToTop />}
     </div>
   );
 }
