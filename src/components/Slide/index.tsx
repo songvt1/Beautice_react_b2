@@ -4,7 +4,7 @@ function Slide() {
   return (
     <>
       <div className="container flex flex-col mt-7 gap-8 lg:mt-48 lg:flex-row lg:justify-between ">
-        <div className="content mt-[10px] ml-10">
+        <div className="content mt-[10px] ml-0 md:ml-10">
           <h1 className="text-blueColor font-semibold text-[36px] leading-[125%] max-w-[430px] lg:text-5xl lg:leading-snug  ">
             Clinic & beauty consultant
           </h1>
