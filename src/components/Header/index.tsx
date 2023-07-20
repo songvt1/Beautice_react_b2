@@ -41,7 +41,7 @@ function Header() {
         </div>
       </div>
       {showMenu && (
-        <nav className="nav-menu flex flex-col items-end md:hidden mt-[10px] mr-[10px]">
+        <nav className="nav-menu flex flex-col items-end md:hidden mt-[10px] mr-[20px]">
           <ul className="flex flex-col gap-y-1 mt-[-10px] font-medium text-grayColor tracking-wider">
             <li>
               <a
